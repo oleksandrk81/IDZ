@@ -9,7 +9,7 @@ sentry_sdk.init(
 
 def count_vowels(text: str) -> int:
     if not text:
-        raise ValueError("Текст порожній") [cite: 29]
+        raise ValueError("Текст порожній")
     
     vowels = "aeiouyаеєиіїоуюяAEIOUYАЕЄИІЇОУЮЯ"
     return sum(1 for char in text if char in vowels)
