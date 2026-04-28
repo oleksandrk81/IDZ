@@ -1,9 +1,6 @@
 install:
 	pip install -r requirements.txt
 
-run:
-	python main.py
-
 test:
 	pytest --doctest-modules main.py test_main.py
 
@@ -13,4 +10,4 @@ lint:
 security:
 	safety check
 
-all: lint test security
+all: install lint test security
